@@ -22,11 +22,11 @@ class LitDataModule(pl.LightningDataModule):
                                           shuffle=True, 
                                           num_workers=1),
     
-        self.validation_data  : torch.utils.data.DataLoader(test_data, 
+        self.validation_data  = torch.utils.data.DataLoader(test_data, 
                                           batch_size=100, 
                                           shuffle=True, 
                                           num_workers=1)
-        self.test_data  : torch.utils.data.DataLoader(test_data, 
+        self.test_data  = torch.utils.data.DataLoader(test_data, 
                                           batch_size=100, 
                                           shuffle=True, 
                                           num_workers=1)
